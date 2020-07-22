@@ -3,7 +3,8 @@
 # For seuphor/airflow image
 FROM puckel/docker-airflow:1.10.9
 RUN python -m pip install --upgrade pip setuptools wheel
-RUN pip install --user psycopg2-binary==2.8.4
+RUN pip install --user psycopg2-binary==2.8.4 \
+    && pip install flask-bcrypt
 ENV AIRFLOW_HOME=/usr/local/airflow
 COPY ./airflow.cfg /usr/local/airflow/airflow.cfg
 
