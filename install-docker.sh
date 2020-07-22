@@ -16,9 +16,9 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 sudo apt-get -y update
 sudo apt-get -y install docker-ce docker-compose
 
-sudo systemctl restart docker
-sudo systemctl enable docker
+# sudo systemctl restart docker
+# sudo systemctl enable docker
 
 # fix permission issue
-sudo chmod +x /usr/local/bin/docker-compose
-sudo chmod 666 /var/run/docker.sock
+# sudo chmod +x /usr/local/bin/docker-compose
+# sudo chmod 666 /var/run/docker.sock
